@@ -1,0 +1,101 @@
+{
+  "paramedics": [
+    {
+      "id": 1,
+      "username": "paramedic1",
+      "password": "pass123",
+      "name": "Virat",
+      "position": "Paramedic",
+      "experience": "5 years",
+      "email": "viratkohli@gmail.com",
+      "trips": [
+        {
+          "id": 1,
+          "date": "2023-05-05",
+          "time": "15:41:00",
+          "location": "Kelambakkam",
+          "ambulance": "AMB123",
+          "hospitalVisited": "Hospital X",
+          "patientDiseasesCause": "Flu"
+        },
+        {
+          "id": 2,
+          "date": "2023-05-11",
+          "time": "14:15:00",
+          "location": "Chennai",
+          "ambulance": "AMB124",
+          "hospitalVisited": "Hospital Y",
+          "patientDiseasesCause": "Fever"
+        },
+        {
+          "id": 3,
+          "date": "2023-08-14",
+          "time": "01:00:00",
+          "location": "Coimbatore",
+          "ambulance": "AMB125",
+          "hospitalVisited": "Hospital Z",
+          "patientDiseasesCause": "Injury"
+        },
+        {
+          "id": 4,
+          "date": "2023-06-29",
+          "time": "00:00:00",
+          "location": "Madurai",
+          "ambulance": "AMB126",
+          "hospitalVisited": "Hospital A",
+          "patientDiseasesCause": "Headache"
+        },
+        {
+          "id": 5,
+          "date": "2023-06-19",
+          "time": "09:10:00",
+          "location": "Trichy",
+          "ambulance": "AMB127",
+          "hospitalVisited": "Hospital B",
+          "patientDiseasesCause": "Cold"
+        },
+        {
+          "id": 6,
+          "date": "2023-07-15",
+          "time": "18:45:00",
+          "location": "Salem",
+          "ambulance": "AMB128",
+          "hospitalVisited": "Hospital C",
+          "patientDiseasesCause": "Allergy"
+        }
+      ]
+    }
+  ],
+  "hospitals": [
+    {
+      "id": 1,
+      "username": "cityhospital",
+      "password": "hospital123",
+      "name": "City Hospital",
+      "location": "Downtown",
+      "oxygenCylinders": 20,
+      "bedsAvailable": 50,
+      "medicalEquipment": "X-ray, MRI, Ultrasound",
+      "specialties": "Cardiology, Neurology, Orthopedics",
+      "contactNumber": "(123) 456-7890"
+    }
+  ],
+  "ambulanceSupplies": [
+    {
+      "ambulanceId": "AMB101",
+      "supplies": [
+        { "name": "Bandages", "quantity": 50 },
+        { "name": "Gloves (pairs)", "quantity": 100 },
+        { "name": "Painkillers", "quantity": 30 }
+      ]
+    },
+    {
+      "ambulanceId": "AMB102",
+      "supplies": [
+        { "name": "Syringes", "quantity": 75 },
+        { "name": "Antiseptic Wipes", "quantity": 120 },
+        { "name": "Defibrillator Pads", "quantity": 10 }
+      ]
+    }
+  ]
+}

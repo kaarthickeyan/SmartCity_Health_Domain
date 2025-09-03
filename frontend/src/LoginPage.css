@@ -1,0 +1,131 @@
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.login-content-left {
+  flex: 1; /* Takes up available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 50%; /* Limit width for larger screens */
+  box-sizing: border-box;
+}
+
+.image-container-right {
+  flex: 1; /* Takes up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 50%; /* Limit width for larger screens */
+  box-sizing: border-box;
+}
+
+.ambulance-image {
+  width: 100%; /* Make image responsive within its container */
+  max-width: 450px; /* Adjust max-width as needed */
+  height: auto;
+  border-radius: 20px; /* Slightly more rounded corners */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.ambulance-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 3.2em; /* Slightly larger title */
+  margin-bottom: 40px; /* Adjusted margin */
+  letter-spacing: 2.5px;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 380px; /* Wider buttons */
+}
+
+.login-button {
+  padding: 18px 30px;
+  border: none;
+  border-radius: 35px;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.login-button.paramedic {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.login-button.paramedic:hover {
+  background: linear-gradient(45deg, #0056b3, #004085);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.5);
+}
+
+.login-button.hospital {
+  background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.login-button.hospital:hover {
+  background: linear-gradient(45deg, #218838, #19692c);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(40, 167, 69, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-page-container {
+    flex-direction: column;
+  }
+
+  .login-content-left,
+  .image-container-right {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .ambulance-image {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  .login-options {
+    max-width: 300px;
+  }
+
+  .login-button {
+    font-size: 1.1em;
+    padding: 15px 25px;
+  }
+}

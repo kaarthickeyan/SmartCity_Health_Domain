@@ -1,0 +1,46 @@
+.hospital-policies-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #007bff;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.policies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.policy-item {
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.policy-item h3 {
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.policy-item p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #aaa;
+  margin: 0;
+}
